@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brand-vs-nonbrand-share"
+version = "1.0.0"
+description = "Branded vs non-branded traffic split for you and competitors"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Meer Hamza", email = "meerhamza5@gmail.com" }]
+requires-python = ">=3.10"
+dependencies = ["requests>=2.28", "beautifulsoup4>=4.11", "pandas>=1.5", "openpyxl>=3.1", "click>=8.1"]
+keywords = ["seo", "brand", "vs", "nonbrand", "share"]
+
+[project.urls]
+Homepage = "https://github.com/marketing-MEER/brand-vs-nonbrand-share"
+"SEO Toolbox" = "https://github.com/marketing-MEER/seo-toolbox"
+LinkedIn = "https://www.linkedin.com/in/meerhamza-seo"
+
+[project.scripts]
+brand-vs-nonbrand-share = "brand_vs_nonbrand_share.cli:main"
+
+[tool.setuptools]
+packages = ["brand_vs_nonbrand_share"]
